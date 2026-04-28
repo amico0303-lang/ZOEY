@@ -542,6 +542,22 @@
   </style>
 </head>
 <body>
+  <button onclick="toggleMusic()">♫ 播放音樂</button>
+
+<audio id="bgMusic" loop>
+  <source src="Guitar Pop Type Beat ''TIFFANY'' - GC (youtube).mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  function toggleMusic() {
+    const music = document.getElementById("bgMusic");
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+</script>
   <main class="page">
     <div class="floating-word">SPORTS × LIFESTYLE × BALANCE</div>
     <div class="sparkle s1">✦</div>
